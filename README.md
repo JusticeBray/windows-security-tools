@@ -1,181 +1,123 @@
 # Windows Security Tools Lab
 
-## Overview
+**Platform:** Windows 11
 
-This repository demonstrates several commonly used Windows networking and cybersecurity tools. These exercises were completed as part of my cybersecurity coursework and helped build foundational knowledge in network troubleshooting, system administration, and security analysis.
+**Technology:** Windows Command Prompt
 
----
-
-## Platform
-
-**Windows 11**
+**Focus:** Network Diagnostics & Security Fundamentals
 
 ---
 
-## Technologies Used
+# Overview
+
+This project demonstrates the use of several Windows networking and security tools commonly used by system administrators and cybersecurity professionals. These exercises focus on network troubleshooting, connectivity testing, route analysis, and viewing system network information through the Windows Command Prompt.
+
+---
+
+# Technologies Used
 
 - Windows Command Prompt
-- Windows PowerShell
-- TCP/IP Networking
+- Windows 11
+- TCP/IP
+- ICMP
 - Network Diagnostics
-
----
-
-# Security Tools Covered
-
-## Ping
-
-Tests connectivity between systems and measures response time.
-
-### Skills Demonstrated
-
-- Connectivity testing
-- Packet loss analysis
-- Latency verification
-
----
-
-## Netstat
-
-Displays active network connections and listening ports.
-
-### Skills Demonstrated
-
-- Active connection analysis
-- Listening ports
-- Connection states
-- Network troubleshooting
-
----
-
-## Tracert
-
-Displays the route packets travel to reach a destination.
-
-### Skills Demonstrated
-
-- Route tracing
-- Hop analysis
-- Network path troubleshooting
-
----
-
-## Nmap (Concepts)
-
-Studied how Nmap is used for host discovery and port scanning.
-
-### Skills Demonstrated
-
-- Network enumeration
-- Port discovery
-- Host identification
-
----
-
-## Wireshark (Concepts)
-
-Studied packet analysis techniques used for troubleshooting and security investigations.
-
-### Skills Demonstrated
-
-- Packet inspection
-- Traffic analysis
-- Protocol identification
-
----
-
-## SNORT (Concepts)
-
-Studied intrusion detection and alert monitoring.
-
-### Skills Demonstrated
-
-- Intrusion Detection Systems (IDS)
-- Threat monitoring
-- Signature detection
-
----
-
-## Honeybot (Concepts)
-
-Studied honeypot technology used to detect and analyze attacker behavior.
-
-### Skills Demonstrated
-
-- Honeypots
-- Threat intelligence
-- Attack observation
-
----
-
-# Screenshots
-
-## Ping Testing
-
-Description of network connectivity tests.
-
-<img src="screenshots/ping-test.png" width="900">
-
----
-
-## Netstat Connections
-
-Viewing active network connections.
-
-<img src="screenshots/netstat-connections.png" width="900">
-
----
-
-## Netstat Help
-
-Viewing available Netstat options.
-
-<img src="screenshots/netstat-help.png" width="900">
-
----
-
-## Netstat -b
-
-Displaying executable files associated with active connections.
-
-<img src="screenshots/netstat-b.png" width="900">
-
----
-
-## Netstat -e
-
-Viewing Ethernet statistics.
-
-<img src="screenshots/netstat-e.png" width="900">
-
----
-
-## Netstat -r
-
-Viewing the routing table.
-
-<img src="screenshots/netstat-r.png" width="900">
-
----
-
-## Tracert
-
-Tracing packet routes across the internet.
-
-<img src="screenshots/tracert.png" width="900">
 
 ---
 
 # Skills Demonstrated
 
-- Windows Administration
-- Network Troubleshooting
-- TCP/IP
-- Security Fundamentals
-- Network Diagnostics
-- Command Line
-- Cybersecurity Concepts
-- PowerShell
-- Command Prompt
+- Network troubleshooting
+- Connectivity testing
+- TCP/IP fundamentals
+- Route analysis
+- Network statistics
+- Routing table analysis
+- Command-line administration
 
 ---
+
+# Project Walkthrough
+
+## Step 1 - View Network Configuration
+
+Used the **ipconfig** command to display the local network configuration, including IP address, subnet mask, and default gateway.
+
+<p align="center">
+  <img src="screenshots/ipconfig-basic.png" width="900">
+</p>
+
+---
+
+## Step 2 - Test Network Connectivity
+
+Used the **ping** command to verify communication with another host and measure network response times.
+
+<p align="center">
+  <img src="screenshots/ping-test.png" width="900">
+</p>
+
+---
+
+## Step 3 - Trace the Network Path
+
+Used **tracert** to display each network hop between the local computer and the destination host.
+
+<p align="center">
+  <img src="screenshots/tracert-route.png" width="900">
+</p>
+
+---
+
+## Step 4 - View Active Network Connections
+
+Used **netstat** to display active TCP connections and listening ports.
+
+<p align="center">
+  <img src="screenshots/netstat-connections.png" width="900">
+</p>
+
+---
+
+## Step 5 - View Ethernet Statistics
+
+Used **netstat -e** to display Ethernet statistics, including transmitted and received bytes and packets.
+
+<p align="center">
+  <img src="screenshots/netstat-e.png" width="900">
+</p>
+
+---
+
+## Step 6 - View the Routing Table
+
+Used **netstat -r** to display the system routing table and active network routes.
+
+<p align="center">
+  <img src="screenshots/netstat-routing-table.png" width="900">
+</p>
+
+---
+
+# Project Outcome
+
+This project strengthened my understanding of Windows networking tools used to diagnose connectivity issues, analyze network traffic, verify routing information, and troubleshoot communication problems. These command-line utilities are commonly used in IT support, systems administration, and cybersecurity environments.
+
+---
+
+# Real-World Uses
+
+The tools demonstrated in this project are commonly used to:
+
+- Verify network connectivity
+- Diagnose communication issues
+- View active network connections
+- Analyze routing information
+- Troubleshoot TCP/IP problems
+- Validate network configurations
+- Support Windows system administration
+
+---
+
+# Conclusion
+
+Completing this lab provided practical experience using Windows networking tools to troubleshoot systems and analyze network activity. These foundational skills are applicable to help desk, systems administration, and cybersecurity roles where command-line diagnostics are frequently used.
